@@ -21,7 +21,7 @@
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>CREW</title>
+    <title>Scinnova VI</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -30,9 +30,15 @@
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
-	
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="/css/scss.css" rel="stylesheet">
+	<link href="/css/css1.css" rel="stylesheet">
+  <link href="/css/cd.css" rel="stylesheet">
+  <link href="/css/style2.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
 	<!-- Favicon  -->
- <link rel="icon" href="images/favicon.png"> 
+ <link rel="icon" href="/images/scinnova vi logo.png"> 
 </head>
 <body>
     
@@ -41,14 +47,24 @@
         <div class="container">
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/CL.png" alt="alternative" style="width: 120px; height:auto;"></a> 
-
+            <a class="navbar-brand logo-image" href="index.html"><img src="/images/scinnova vi logo.png" alt="alternative" style="width: 66px; height: 60px; padding: 5px; align-content: center;"></a> 
+           <!--<a class="navbar-brand logo-image" href="index.html"><img src="/images/Snvgif.gif" alt="alternative" style="width: 102px; height: 60px; padding: 5px; align-content: center;"></a> -->
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!--<a class="navbar-brand logo-text" href="index.html">CREW</a> --> 
             <!-- <a class="navbar-brand logo-text" href="index.html">Desi</a> -->
 
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" id="" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> <svg class="ham ham6" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                  <path
+                        class="line top"
+                        d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+                  <path
+                        class="line middle"
+                        d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+                  <path
+                        class="line bottom"
+                        d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+                </svg>
             </button>
 
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
@@ -57,24 +73,39 @@
                         <a class="nav-link active" aria-current="page" href="#header">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#Module">Modules</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                   <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#blog" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                           
+                            <li><a class="dropdown-item" href="#t-message">Team's Message</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="#t-message">STEM</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="#blog">Our Previous Successes</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="#F-message">Mentor's Messages</a></li>
+                        </ul>
+                    </li>
+
+
+                   <li class="nav-item">
+                        <a class="btn-solid-reg2" href="#register">Register</a>
                     </li>
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
-                        <a href="https://www.facebook.com/cedar.crew/">
+                        <a href="https://www.facebook.com/scinnova.v/">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-facebook-f fa-stack-1x"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="https://www.instagram.com/crew.cedar/">
+                        <a href="https://www.instagram.com/scinnova_vi/">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-instagram fa-stack-1x"></i>
                         </a>
@@ -83,11 +114,7 @@
              <!-- end of navbar-collapse -->
         <!-- end of container -->
      <span class="nav-items mode-icon">
-        <i style="
-    display: block;
-   
-    margin-left: 3px;
-" class="fas fa-lightbulb " id="icon"></i> 
+        <i class="fas fa-lightbulb mode " id="icon"></i> 
         
         </span>
          
@@ -102,10 +129,116 @@
         <div class="header-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="h1-large">Cedar's Robotics and Engineering Wing</h1>
-                        <a class="btn-solid-lg" href="#introduction">Discover</a>
+                    <img src="/images/scinnova vi cc.png" alt="pic" class="head">
+                       
+                    
+                      <div class="conatiner6">
+                        <div class="">
+                          <h5 style=" color:#fff; margin-top: 3rem; font-size: 28px;">Time Until Early Bird Registration</h5>
+                        <div class="wrapper" style=" margin-top: 5%;">
+                      
+                          <div class="count-down">
+                             <div class="timer day">
+                                <div class="count">
+                                   <div class="numb">
+                                      00
+                                   </div>
+                                   <div class="text">
+                                      Days
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="clone">
+                                :
+                             </div>
+                             <div class="timer hour">
+                                <div class="count">
+                                   <div class="numb">
+                                      00
+                                   </div>
+                                   <div class="text">
+                                      Hours
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="clone">
+                                :
+                             </div>
+                             <div class="timer min">
+                                <div class="count">
+                                   <div class="numb">
+                                      00
+                                   </div>
+                                   <div class="text">
+                                      Minutes
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="clone">
+                                :
+                             </div>
+                             <div class="timer sec">
+                                <div class="count">
+                                   <div class="numb">
+                                      00
+                                   </div>
+                                   <div class="text">
+                                      Seconds
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                         
+                        </div>
+                        </div>
+                        <script>
+                          const day = document.querySelector(".day .numb");
+                          const hour = document.querySelector(".hour .numb");
+                          const min = document.querySelector(".min .numb");
+                          const sec = document.querySelector(".sec .numb");
+                          var timer = setInterval(()=>{
+                            var currentDate = new Date().getTime();
+                            var launchDate = new Date('Dec 10, 2024 12:00:00').getTime();
+                            var duration = launchDate - currentDate;
+                            var days = Math.floor(duration / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((duration % (1000 * 60 * 60 * 12)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((duration % (1000 * 60)) / 1000);
+                            day.innerHTML = days;
+                            hour.innerHTML = hours;
+                            min.innerHTML = minutes;
+                            sec.innerHTML = seconds;
+                            if(days < 10){
+                              day.innerHTML = '0' + days;
+                            }
+                            if(hours < 10){
+                              hour.innerHTML = '0' + hours;
+                            }
+                            if(minutes < 10){
+                              min.innerHTML = '0' + minutes;
+                            }
+                            if(seconds < 10){
+                              sec.innerHTML = '0' + seconds;
+                            }
+                            if(duration < 0){
+                              clearInterval(timer);
+                            }
+                          }, 1000);
+                        </script>
+                    
+                    
+                      </div>
+                      
+                      
+                      <!--  <a class="btn-solid-lg" href="#introduction">Discover</a> -->
+                      <!--<span class="fa-long-arrow-alt-down" style="position:absolute; color:white; font-size: medium;"></span>-->
+                 <!-- <img src="/images/Artboard 1.png" alt="pic2" class="dates"> -->
                     </div> <!-- end of col -->
+                      
+
+                    
+               <!-- <a href="#introduction">   <i class="fas fa-arrow-circle-down" style="color:white; font-size:25px; align-content: center; margin-top: 0rem;"></i> -->
+                 </a>  
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
         </div> <!-- end of header-content -->
@@ -116,84 +249,33 @@
         </video>
         <!-- end of video background -->
 
+
     </header> <!-- end of header -->
     <!-- end of header -->
-
-
-    <!-- Introduction -->
-    <div id="introduction" class="cards-1">
-        <div class="container">
-    
-            <div class="row">
-                <div class="col-lg-12">
-                
-                    <h2 class="h2-heading">What is CREW?</h2>
-                    <p class="p-heading">CREW is a diverse stem society that provides one with insights and exposure in multiple different areas such as those listed below </p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-icon">
-                            <span class="fas fa-code"></span>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Coding</h4>
-                            <div class="card-text">Programming is an integral part of CREW as it overlaps with various other aspects of CREW, including robotics and web development. We are also reputed for organizing various coding workshops and competitions</div>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-icon">
-                            <span class="fas fa-cogs"></span>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Engineering</h4>
-                            <div class="card-text">The engineer in each member of CREW is what drives us to undertake the most complex of projects. From making Solar powered charging stations to installing automatic water tap systems in the campuses</div>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-icon">
-                            <span class="fas fa-robot"></span>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Robotics</h4>
-                            <div class="card-text">CREW is almost synonymous with this complex field of science, members of CREW have achieved a lot through robotics such as building line following robots, blind stick and there is so much more we plan to do in future</div>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of introduction -->
-
-
+ 
+<div class=" pgwrapper">
     <!-- Details -->
-	<div class="split">
+	<div class="split" id="introduction">
+    
 		<div class="area-1">
 		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
-            <div class="container">    
+           
+      
+      
+      
+      <div class="container">    
                 <div class="row">
                     <div class="col-lg-12">     
                      
                         <!-- Text Container -->
                         <div class="text-container">
-                            <h2>What do we offer?</h2>
-                            <p>We at CREW not only offer you a place to learn and experience the wonderful world of robotics and engineering, but also give you a work environment that helps you develop skills which will help you greatly throughout your professional life</p>
-                            <p><strong>Enthusiasm -</strong> We work as a community to prepare young people for a STEM future, CREW aims to ensure its programs are having a lasting, positive impact.
-                            </p>
-                            <p><strong>Skill Enhancement-</strong> To develop problem solving skills as well as creative thinking, teamwork and communication skills
-                            </p>
-                            <p><strong>CREATIVE FREEDOM -</strong>At CREW we work as a team. With every given task, you have the opportunity to take it to the best level you can and there are no restrictions to what you are willing to do; there is only constructive feedback and valuable opinions which will aide you in doing the best you can and also help you learn a thing or two from the experienced members of CREW</p>
+                            <h2>What is Scinnova?</h2>
+                            <p> From a participant’s standpoint, Scinnova will be an experience to remember. Taking ideas out of the classroom and putting them in front of you. Create complex circuitry. Dissect creatures with paper-thin precision. Unravel conspiracies. In Scinnova, rediscover yourself, go outside your comfort zone and get a firsthand experience of how it feels to work in the practical world.
+                          <br>
+                          <br>
+                           
+                                The word "Scinnova" stems from the words "Science" and "Innovation." The vision behind this is to challenge young minds in General Sciences, Programming and Robotics, Psychology, and much more. Scinnova is more than just a Science Olympiad; it ignites the flames of passion for science in an individual. It lets you explore yourself and venture STEM beyond theory and connects you with the essence of these domains. 
+                                  </p>
                         </div> <!-- end of text-container -->
                         <!-- end of text container -->
                        
@@ -203,69 +285,380 @@
 		</div> <!-- end of area-2 -->
     </div> <!-- end of split -->
     <!-- end of details -->
-
-
-    <!-- Services 1 -->
-    <div id="services" class="basic-1">
+      
+    <div id="register">
+    <div class="basic-3" style="padding-top: 5rem; margin-bottom: 8rem;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/services-1.jpeg" alt="alternative">
+                        <img class="img-fluid" src="images/6.png" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-5">
                     <div class="text-container">
-                        <h2>Workshops</h2>
-                        <p>CREW puts its efforts into conducting informative and intellectual workshops. These workshops incorporate lectures on advancements in technology and how students can fashion them on their own, followed by construction activities that help them to produce problem-solving, creative thinking, and decision-making skills. CREW, in 2021, successfully hosted the mesmerizing Inventor’s Binary Workshop, a hands-on, beginner-friendly introduction to the art of Arduino and robotics. It was an interactive session where the students and the team in conjunction learned about Arduino, coding, and writing algorithms that work alongside a robot, sensors, motors, and much more.  
-                  </p>
-                        <a class="read-more no-line green" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of services 1 -->
-
-
-    <!-- Services 2 -->
-    <div class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/services-2.jpeg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-5">
-                    <div class="text-container">
-                        <h2>Programming compeitions</h2>
-                        <p>Competition creates better products, alliances create better companies." Our team works hard to design action-packed as well as strategic competitions. In 2021, CREW hosted a virtual programming competition called the Bytecode Velocity Gen 2 in which participants were assessed on their knowledge and understanding of programming by getting engaged in different modules full of coding, debugging, and brainstorming different solutions. Here’s to more events like these!
+                        <h2 style="font-size: 45px;"> Register Now!</h2>
+                      
+                       <h5>Team Limit:</h5>
+                       <p>5-6 members</p>
+                        <h5>Early Bird Cycle:
+                        </h5>
+                        <p>Delegate Registration Fee: PKR 3500/-
+                           <br> Team Registration Fee: NONE
                         </p>
-                        <a class="read-more no-line green" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                        <br>
+                       
+                        <h5>Regular Cycle:
+
+                        </h5>
+                        <p>
+                            Delegate Registration Fee: PKR 3500/-
+                           <br> Team Registration Fee: PKR 4500/-
+                            
+                        </p>
+                        <br>
+                  
+                        <br>
+                        <a class="btn-solid-reg1 " href="https://form.jotform.com/223122896397465">Register Now! </a>
+                        <br>
+                        <br>
+                        <a class="btn-solid-reg1 "  href="https://drive.google.com/file/d/1omFZe1UQmCejAcl6w2Zh8v0NJ6X62iMw/view?usp=sharing">Access Forms </a>
+                     
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of services 2 -->
-    
-    
+    </div> <!-- end of basic-3 -->
+    <!-- end of services 3 -->
+</div>
+
+
+
+ <!-- Projects -->
+<div id="Module" >
+ <h2  style="text-align: center; font-size: 40px; margin-bottom: 0.5rem;"> Modules</h2>
+
+    <div class="flex">
+    <div class="product">
+      <div class="product-card">
+        <h2 class="name">Arcanum</h2>
+     
+        <a class="popup-btn">Read More</a>
+        <img src="/images/arcanum trans2.png"  style="aspect-ratio: auto;
+        width: 270px;" class="product-img" alt="">
+      </div>
+      <div class="popup-view">
+        <div class="popup-card">
+          <a><i class="fas fa-times close-btn"></i></a>
+          <div class="product-img">
+            <img src="/images/arcanum w.png" style="aspect-ratio: auto; width: 300px;" alt="">
+          </div>
+          <div class="info">
+            <h2>Arcanum<br><span>Compulsory Module</span></h2>
+            <p>Taking a deep-dive into the world of ciphers, with an out-of-sight out-of-mind criminal on the loose, only the best of detectives can survive in the world of Arcanum. If noir is your favourite genre, and decrypting messages that seem like rambling is your forte, then this is the module for you, as it will literally play a game of 4-D chess with your mind.</p>
+          
+            <a href="#register" class="add-cart-btn">Register Now</a>
+            <!--<a href="#" class="add-wish">Add to Wishlist</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-card">
+        <h2 class="name" >Illumnatio</h2>
+       
+        <a class="popup-btn">Read More</a>
+        <img src="/images/illuminatio.png" class="product-img" style="aspect-ratio: auto;
+        width: 200px;" alt="">
+      </div>
+   
+      <div class="popup-view">
+        <div class="popup-card">
+          <a><i class="fas fa-times close-btn"></i></a>
+          <div class="product-img">
+            <img src="/images/illuminatio w.png" style="aspect-ratio: auto; width: 300px;" alt="">
+          </div>
+          <div class="info">
+            <h2>Illumnatio<br><span>Pure Science Module</span></h2>
+            <p>Mixing chemicals to make mystifying colours, extracting complex materials from common items, and so much more! Better get ready because Illuminatio will challenge your textbook knowledge and apply it in the arena that is the mystical world of Chemistry!
+            </p>
+       
+            <a href="#register" class="add-cart-btn">Register Now</a>
+            <!--<a href="#" class="add-wish">Add to Wishlist</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-card">
+        <h2 class="name">Planck's Paradox</h2>
+        <!--<span class="price">$250.00</span> -->
+        <a class="popup-btn">Read More</a>
+        <img src="/images/Plank's Paradox .png" class="product-img" style="aspect-ratio: auto;
+        width: 200px;" alt="">
+      </div>
+      <div class="popup-view">
+        <div class="popup-card">
+          <a><i class="fas fa-times close-btn"></i></a>
+          <div class="product-img">
+            <img src="/images/planck's paradox.png" style="aspect-ratio: auto; width: 300px;" alt="">
+          </div>
+          <div class="info">
+            <h2>Planck's Paradox<br><span>Pure Science Module</span></h2>
+            <p>With the simplest of events around you having a reason behind them, be it a push, pull, or even an electrostatic force, will you be able to master all the physical elements? Because the clock is ticking and only your brains have the blueprints to the solution!
+            </p>
+          
+            <a href="#register" class="add-cart-btn">Register Now</a>
+            <!--<a href="#" class="add-wish">Add to Wishlist</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-card">
+        <h2 class="name">Asclepius</h2>
+   
+        <a class="popup-btn">Read More</a>
+        <img src="/images/Asclepius.PNG"  style="aspect-ratio: auto;
+        width: 200px;" class="product-img" alt="">
+      </div>
+      <div class="popup-view">
+        <div class="popup-card">
+          <a><i class="fas fa-times close-btn"></i></a>
+          <div class="product-img">
+            <img src="/images/asclepius w.png" style="aspect-ratio: auto; width: 300px;"  alt="">
+          </div>
+          <div class="info">
+            <h2>Asclepius<br><span>Pure Science Module</span></h2>
+            <p>
+              Making sense of every minuscule change in our biosphere has been a daunting task for the Biologists of our age. From manipulating genetic structures to dissecting organisms, see if you can make sense of the fascinating theories and questions in store for you in Asclepius!
+              
+              </p>
+         
+            <a href="#register" class="add-cart-btn">Register Now</a>
+            <!--<a href="#" class="add-wish">Add to Wishlist</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   <div class="flex">
+ 
+    <div class="product">
+      <div class="product-card">
+        <h2 class="name">Ptolemy's Puzzle</h2>
+      
+        <a class="popup-btn">Read More</a>
+        <img src="/images/Ptolemy’s logo.PNG" style="aspect-ratio: auto;
+        width: 200px;" class="product-img" alt="">
+      </div>
+      <div class="popup-view">
+        <div class="popup-card">
+          <a><i class="fas fa-times close-btn"></i></a>
+          <div class="product-img">
+            <img src="/images/ptolemy puzzleww.png" style="aspect-ratio: auto; width: 300px;" alt="">
+          </div>
+          <div class="info">
+            <h2>Ptolemy's Puzzle<br><span>Pure Science Module</span></h2>
+            <p>With a gradient that tends to make less sense the further it goes on, Ptolemy’s Puzzle is an enigmatic function that integrates both Math and Logic into a module that is sure to keep you on your toes. Better be prepared because we are about to explore every nook and cranny of the Cartesian Plane and beyond!
+            </p>
+          
+            <a href="#register" class="add-cart-btn">Register Now</a>
+            <!--<a href="#" class="add-wish">Add to Wishlist</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-card">
+        <h2 class="name">Automaton</h2>
+  
+        <a class="popup-btn">Read More</a>
+        <img src="/images/Automaton Logo.png"  style="aspect-ratio: auto;
+        width: 200px;" style="aspect-ratio: auto;
+        width: 300px;" class="product-img" alt="">
+      </div>
+      <div class="popup-view">
+        <div class="popup-card">
+          <a><i class="fas fa-times close-btn"></i></a>
+          <div class="product-img">
+            <img src="/images/automaton.png" style="aspect-ratio: auto; width: 300px;" alt="">
+          </div>
+          <div class="info">
+            <h2>Automaton<br><span>Specialised Module</span></h2>
+            <p>while(noSuccess)
+              { 
+                           tryagain();
+                           if(Dead)
+                                       break;
+              }
+              
+              From writing lines of code for solving a simple task to writing for Arduino, this module filled with Robotics will provide you with the opportunity to flaunt your creative side, unleash your programming genius and utilise your critical thinking to the fullest.
+              </p>
+       
+            <a href="#register" class="add-cart-btn">Register Now</a>
+            <!--<a href="#" class="add-wish">Add to Wishlist</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-card">
+        <h2 class="name">Freud's Forsit</h2>
+
+        <a class="popup-btn">Read More</a>
+        <img src="/images/Freud logo.PNG"  style="aspect-ratio: auto;
+        width: 200px;"  class="product-img" alt="">
+      </div>
+      <div class="popup-view">
+        <div class="popup-card">
+          <a><i class="fas fa-times close-btn"></i></a>
+          <div class="product-img">
+            <img src="/images/freud's forsit.png" style="aspect-ratio: auto; width: 300px;" alt="">
+          </div>
+          <div class="info">
+            <h2>Freud's Forsit<br><span>Specialised Module</span></h2>
+            <p>It’s not all black and white in the world of the mindscape. Traversing through the field of Psychology and seeing through the grey areas, Freud’s Forsit will have you see firsthand the spectrum of which we are influenced by the human brain. With the ever-expanding field that is the human psyche, will you be able to tell what’s “normal” and what’s not?
+            </p>
+           
+            <a href="#register" class="add-cart-btn">Register Now</a>
+            <!--<a href="#" class="add-wish">Add to Wishlist</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-card">
+        <h2 class="name">Redshift</h2>
+ 
+        <a class="popup-btn">Read More</a>
+        <img src="/images/Redshift logo.png"  style="aspect-ratio: auto;
+        width: 200px;" class="product-img" alt="">
+      </div>
+      <div class="popup-view">
+        <div class="popup-card">
+          <a><i class="fas fa-times close-btn"></i></a>
+          <div class="product-img">
+            <img src="/images/redshift.png" style="aspect-ratio: auto; width: 300px;" alt="">
+          </div>
+          <div class="info">
+            <h2>Redshift<br><span>Specialised Module</span></h2>
+            <p>A compelling journey to dive into the world of astronomers, the profusion of enchanting stars, followed by puzzling questions on astronomy. This is the one module where having your heads in the clouds isn’t high enough, as you dive deeper into unravelling mysteries about the universe!
+            </p>
+   
+            <a href="#register" class="add-cart-btn">Register Now</a>
+            <!--<a href="#" class="add-wish">Add to Wishlist</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript">
+  var popupViews = document.querySelectorAll('.popup-view');
+  var popupBtns = document.querySelectorAll('.popup-btn');
+  var closeBtns = document.querySelectorAll('.close-btn');
+
+  //javascript for Read More button
+  var popup = function(popupClick){
+    popupViews[popupClick].classList.add('active');
+  }
+
+  popupBtns.forEach((popupBtn, i) => {
+    popupBtn.addEventListener("click", () => {
+      popup(i);
+    });
+  });
+
+  //javascript for close button
+  closeBtns.forEach((closeBtn) => {
+    closeBtn.addEventListener("click", () => {
+      popupViews.forEach((popupView) => {
+        popupView.classList.remove('active');
+      });
+    });
+  });
+  </script>
+
+
+  <script type="text/javascript">
+  var popupViews = document.querySelectorAll('.popup-view');
+  var popupBtns = document.querySelectorAll('.popup-btn');
+  var closeBtns = document.querySelectorAll('.close-btn');
+
+  //javascript for Read More button
+  var popup = function(popupClick){
+    popupViews[popupClick].classList.add('active');
+  }
+
+  popupBtns.forEach((popupBtn, i) => {
+    popupBtn.addEventListener("click", () => {
+      popup(i);
+    });
+  });
+
+  //javascript for close button
+  closeBtns.forEach((closeBtn) => {
+    closeBtn.addEventListener("click", () => {
+      popupViews.forEach((popupView) => {
+        popupView.classList.remove('active');
+      });
+    });
+  });
+  </script>
+
+  
+
+<!-- Services 1 -->
+  <div id="services" class="basic-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="image-container">
+                    <img class="img-fluid" src="/images/how do we stand out.JPG" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-5 " style="margin-top: 3rem;">
+                <div class="text-container" style="text-align: left;">
+                    <h2>How are we different?</h2>
+                    <p>Since its inception, practical-based learning has been instilled deep into Scinnova's roots. While others are still using conventional methods for their Olympiads, we develop innovative methods that force the participants to "Think Outside The Box". At Scinnova, we are driven towards providing a well-rounded experience that fuels the creative mind and captures the true essence of STEM-based learning.
+
+                           </p>
+                    <a class="read-more no-line green" href="#register">Register now <span class="fas fa-long-arrow-alt-right"></span></a>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-1 -->
+<!-- end of services 1 -->
+
+
+  
     <!-- Services 3 -->
-    <div class="basic-3">
+    <div class="basic-3" style="padding-bottom: 4.25rem;" id="t-message">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/services-3.jpeg" alt="alternative">
+                        <img class="img-fluid" src="images/reg-p.png" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-5">
+                <div class="col-lg-5"  style="text-align: left;">
                     <div class="text-container">
-                        <h2>Projects that we have developed</h2>
-                        <p>CREW’s tireless members have continuously ground in producing contemporary projects that are specifically modeled considering all the rule book requirements, target missions, and the team’s love for aesthetics! The team is proud to announce its accomplishments as elementary as an Automatic Water Tap to as complex as a Solar Charging System!
+                        <h2>Team's Message</h2>
+                        <p>Scinnova has a reputation to uphold with years of hard work bringing it to its esteemed position as Cedar’s flagship event. We are pleased to tell you that this year, yet again, the Scinnova Team has put their tears and blood into making Scinnova VI bigger and better than ever before. 
+                            Introducing participants to a world far beyond that of textbook science through diligently prepared modules, this year’s Scinnova will have it all! 
+                            You can take it from us that this year will be nothing short of perfection. 
+                            <br>
+                            <br>
+                            
+                            Regards,
+                            <br>
+                            Cedar STEM
+                            
                         </p>
-                        <a class="read-more no-line green" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                        <a class="read-more no-line green" href="#register">Register now <span class="fas fa-long-arrow-alt-right"></span></a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -274,94 +667,343 @@
     <!-- end of services 3 -->
 
 
-    <!-- Projects -->
-	<div id="projects" class="filter bg-gray">
-		<div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Projects That We're Proud Of</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Filter -->
-                    <div class="button-group filters-button-group">
-                        <button class="button is-checked" data-filter="*">SHOW ALL</button>
-                        <button class="button" data-filter=".workshops">WORKSHOPS</button>
-                        <button class="button" data-filter=".projects">PROJECTS</button>
-                        <button class="button" data-filter=".others">OTHERS</button>
-                    </div> <!-- end of button group -->
-                    <div class="grid">
-                        <div class="element-item workshops">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/bmatters.jpg" alt="alternative">
-                                <p><strong>Binary Matters 2.0</strong> - Coding Competition </p>
-                            </a>
+  <!-- Introduction -->
+  <div  class="cards-1">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+            
+                <h2 class="h2-heading">The Brains Behind Scinnova</h2>
+                <p class="p-heading">Scinnova, Cedar College's flaghsip Science Olympiad, is made possible by the following prestigious STEM societies </p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-icon">
+                        <img class="test" src="/images/Copy of Cords logo white.PNG">  
+                      
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">CoRDS</h4>
+                        <div class="card-text">CoRDS,  The Council of Research and Development in Sciences aims to make science more accessible to its student body.We strive to eliminate the gap between textbook-based learning and the practical implementation of ideas in Science.
+
                         </div>
-                        <div class="element-item workshops">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/snapshot56.png" alt="alternative">
-                                <p><strong>Inventor's Binary</strong> - From Bits to Bots</p>
-                            </a>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-icon">
+                    <div>
+                        <img class="test2" src="/images/CLW.png" alt="crew">
+                    </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">CREW</h4>
+                        <div class="card-text">With a goal to automate anything and everything possible, Cedar's Robotics and Engineering Wing, also known as CREW, aims to bring innovations and offer its technical expertise to make a more efficient Scinnova and enhance the overall Cedar experience.
                         </div>
-                        <div class="element-item others">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/snapshot57.png" alt="alternative">
-                                <p><strong>Scinnova III</strong> - The Science Olympiad</p>
-                            </a>
+                    </div>
+                </div>
+                <!-- end of card -->
+           
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-icon">
+                        <img  class="test" src="/images/The Juno Circle Logo White.png" style="margin-top: 14px; width: 86.9809px; height: 60.8085px ;">  
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Juno</h4>
+                        <div class="card-text">The Juno Circle, a blend of astrophysics and creative and artistic energies, focuses on the cosmos and its eloquence. This astronomy and astrophysics society has been an integral part of Scinnova since its second edition and continues to contribute.
+
                         </div>
-                        <div class="element-item others">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/p%20(1).JPG" alt="alternative">
-                                <p><strong>Scinnova V (Architectronics)</strong> - The Science Olympiad </p>
-                            </a>
-                        </div>
-                        <div class="element-item others">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/p%20(2).JPG" alt="alternative">
-                                <p><strong>Scinnova V (Automaton)</strong> - The Science Olympiad</p>
-                            </a>
-                        </div>
-                        <div class="element-item others">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/sct3.PNG" alt="alternative">
-                                <p><strong>Scientia'19</strong> - Intra-school Science Olympiad</p>
-                            </a>
-                        </div>
-                        <div class="element-item workshops">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/bytcode.png" alt="alternative">
-                                <p><strong>Bytecode Velocity</strong> -  Virtual Programming Competition</p>
-                            </a>
-                        </div>
-                        <div class="element-item business software">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/sct2.PNG" alt="alternative">
-                                <p><strong>Scientia'19 (Architectronics)</strong> - Intra-school Science Olympiad</p>
-                            </a>
-                        </div>
-                        <div class="element-item projects">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/project-3.jpg" alt="alternative">
-                                <p><strong>Solar Charging Station</strong> - Re-fuel your batteries while remaining enviormentally conscious</p>
-                            </a>
-                        </div>
-                    </div> <!-- end of grid -->
-                    <!-- end of filter -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-		</div> <!-- end of container -->
-    </div> <!-- end of filter -->
-    <!-- end of projects -->
+                    </div>
+                </div>
+                <!-- end of card -->
+
+            </div> <!-- end of col     -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of cards-1 -->
+<!-- end of introduction -->
+
+<!--Prezi cards-->
+
+
+
+<div class="slider">
+  <button id="prev" class="btn">
+    <i class="las la-angle-left"></i>
+  </button>
+  <div class="card2-content">
+    <!-- card2 -->
+    <div class="card2">
+ 
+      <i class="las la-atom" style="font-size: 2.5rem;"></i>
+      <h6 class="Des">Leader<br>
+       CREW</h6>
+         <h5>PECHS</h5>
+        
+  
+  <div class="card2-img">
+    <img src="/images/test.jpg"alt="">
+    <img class="blur" src="https://photo-cdn.icons8.com/assets/sata/editor/object/244/fc8f52e5-219e-47a0-8475-b96d4f3e6529.png" alt="">
+  </div>
+  <div class="card2-text">
+    <h3>Haris Hussain Khan</h3>
+  
+    <p class="p2">Science is a marvel, but we rarely get to explore it through practical experiences. Put your book knowledge to the test in practical situations and see the wonderful world of science through a new lens at Scinnova VI.
+      <p>
+  </div>
+</div>
+    <!-- card2 End -->
     
+    <!-- card2 -->
+    <div class="card2">
+      <i class="las la-microscope"style="font-size: 3rem;"></i>
+      <h6 class="Des">Leader<br>CoRDS
+        </h6>
+         <h5></h5>
+  
+  <div class="card2-img">
+    <img src="/images/saad.jfif"  alt="">
+    <img class="blur" src="https://photo-cdn.icons8.com/assets/sata/editor/object/456/1e8ed695-cab8-45b2-b09c-153a7970f9f3.png" alt="">
+  </div>
+  <div class="card2-text">
+    <h3>Saad Waheed</h3>
+    <p class="p2"> Students always ask how the things we study in books apply to real-life scenarios. Our team has been working hard to answer that question for you. Come to Scinnova VI and see science come to life.
+      <p>
+  </div>
+</div>
+    <!-- card2 End -->
+    
+        <!-- card2 -->
+    <div class="card2">
+      <i class="las la-tools" style="font-size: 2.5rem;"></i>
+      <h6 class="Des">Leader<br>
+        CREW </h6>
+         <h5>DHA</h5>
+ 
+  <div class="card2-img">
+    <img src="/images/azain.jfif" alt="">
+    <img class="blur" src="https://photo-cdn.icons8.com/assets/sata/editor/object/565/58f397b1-b9d9-49da-91a2-2b647835c0c3.png" alt="">
+  </div>
+  <div class="card2-text">
+    <h3>Muhammad Azain</h3>
+    <p class="p2"> Scinnova brings to the table an experience where you mould yourself into a resilient learner. With the utmost pleasure, I invite you to Scinnova VI, made possible by the efforts of the STEM societies at Cedar.
+      <p>
+  </div>
+</div>
+    <!-- card2 End -->
+    
+        <!-- card2 -->
+    <div class="card2">
+      <i class="las la-drafting-compass"style="font-size: 2.5rem;"></i>
+      <h6 class="Des">Leader<br>
+        CoRDS</h6>
+         <h5></h5>
+
+  <div class="card2-img">
+    <img src="/images/IMG_20220731_231052_166.jpg" alt="">
+    <img class="blur" src="https://photo-cdn.icons8.com/assets/sata/editor/object/0/a46a853c-ae2a-462e-bc2d-94daa8feb269.png" alt="">
+  </div>
+  <div class="card2-text">
+    <h3>Fauz Rajan</h3>
+    <p class="p2"> Scinnova - a platform for the broad spectrum of science, where you can build your forte and become the undisputed virtuosos of science! Surpassed challenges and brave victories await you at Scinnova!
+      <p>
+  </div>
+</div>
+    <!-- card2 End -->
+    
+   <!--  
+    <div class="card2">
+  <h4>4.1</h4>
+  <i class="lar la-heart"></i>
+  <div class="card2-img">
+    <img src="https://photo-cdn.icons8.com/assets/sata/editor/object/830/92cd5f82-0cfb-478d-9d32-a4a7180f593f.png" alt="">
+    <img class="blur" src="https://photo-cdn.icons8.com/assets/sata/editor/object/830/92cd5f82-0cfb-478d-9d32-a4a7180f593f.png" alt="">
+  </div>
+  <div class="card2-text">
+    <h2>Lorem, ipsum</h2>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptate dolorum cumque reprehenderit, quod necessitatibus dolores modi quae.<p>
+  </div>
+</div>
+    
+    <div class="card2">
+  <h4>4.5</h4>
+  <i class="lar la-heart"></i>
+  <div class="card2-img">
+    <img src="https://photo-cdn.icons8.com/assets/sata/editor/object/244/fc8f52e5-219e-47a0-8475-b96d4f3e6529.png" alt="">
+    <img class="blur" src="https://photo-cdn.icons8.com/assets/sata/editor/object/216/0d1423ba-5c74-427f-8137-e07dc2209e65.png" alt="">
+  </div>
+  <div class="card2-text">
+    <h2>Lorem, ipsum.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempora unde molestias dicta nihil pariatur, impedit eligendi quis?<p>
+  </div>
+</div>
+    card2 End -->
+    
+  </div>
+   <button id="next" class="btn">
+    <i class="las la-angle-right"></i>
+  </button>
+</div>
+
+<script>
+
+const next=document.querySelector('#next')
+const prev=document.querySelector('#prev')
+
+function handleScrollNext (direction) {
+  const cards = document.querySelector('.card2-content')
+  cards.scrollLeft=cards.scrollLeft += window.innerWidth / 2 > 600 ? window.innerWidth /2 : window.innerWidth -10
+}
+
+function handleScrollPrev (direction) {
+  const cards = document.querySelector('.card2-content')
+  cards.scrollLeft=cards.scrollLeft -= window.innerWidth / 2 > 600 ? window.innerWidth /2 : window.innerWidth -10
+}
+
+next.addEventListener('click', handleScrollNext)
+prev.addEventListener('click', handleScrollPrev)
+
+
+</script>
+
+
+</div>
+
+<!--End of Prezi Cards-->
+
+    
+    
+    <div class="body7" id="blog">
+      <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="/images//SCINNOVA I.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">2018</span>
+              <div class="blog-slider__title">Scinnova I</div>
+              <div class="blog-slider__text">Being the start of a legacy to come, Scinnova I was nothing short of greatness. With participants sprinting around the campus and performing various experiments that tested their on-the-spot critical thinking, it provided a memorable experience that enhanced their practical abilities.</div>
+                <a href="#register" class="blog-slider__button">REGISTER</a>
+            </div>
+          </div>
+    
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="/images/SCINNOVA II.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">2019</span>
+              <div class="blog-slider__title">Scinnova II</div>
+              <div class="blog-slider__text">Innovating, engaging, and exciting, three of the words used by participants to describe Scinnova II as they spent the better part of three days engaged in a battle of wits. Competing to be the first to arrive at ingenious solutions for mind-boggling challenges.</div>
+                <a href="#register" class="blog-slider__button">REGISTER</a>
+            </div>
+          </div>
+    
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="/images/Screenshot_20221101-192019_Adobe Acrobat.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">2020</span>
+              <div class="blog-slider__title">Scinnova III</div>
+              <div class="blog-slider__text">Scinnova III started off with a bang, amidst toxic fumes and radioactive waste adorning Cedar’s Clifton campus. With over 60 teams, 10 modules, and the ever ticking time bomb of Cednobyl, Scinnova III was an event to die (likely of radiation poisoning) for.</div>
+                <a href="#register" class="blog-slider__button">REGISTER</a>
+            </div>
+          </div>
+    
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="/images/SCINNOVA IV.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">2021</span>
+              <div class="blog-slider__title">Scinnova IV</div>
+              <div class="blog-slider__text">Scinnova IV, despite being conducted in times as difficult as ever, did not fail to wow. The ability of the organizing team to constantly innovate is what turned the gears into making Scinnova IV the most individualistic online science olympiad of the year.</div>
+                <a href="#register" class="blog-slider__button">REGISTER</a>
+            </div>
+          </div>
+    
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="/images/SCINNOVA V.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">2022</span>
+              <div class="blog-slider__title">Scinnova V</div>
+              <div class="blog-slider__text">With new modules and a fan-favourite social event, Scinnova V offered something for everything while also giving its participants the genuine Scinnova experience – the ability to come and challenge oneself. All this, and more, had everyone on the edge of their seats!</div>
+                <a href="#register" class="blog-slider__button">REGISTER</a>
+            </div>
+          </div>
+    
+        </div> 
+        <div class="blog-slider__pagination"></div>
+      </div>
+    
+      
+    
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+      <script src="script.js"></script>
+    
+    <script>
+
+var swiper = new Swiper('.blog-slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mouseWheel: {
+        invert: false,
+    },
+    // autoHeight: true
+    pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+    }
+});
+
+    </script>
+    </div>
+<div class="pgwrapper">
+
+<!-- Venue -->
+<div class="basic-2">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-7">
+              <div class="image-container">
+                  <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="filter: grayscale(00%) invert(0%) contrast(100%)"  src="https://maps.google.com/maps?width=641&amp;height=427&amp;hl=en&amp;q=cedar college dha&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://piratebay-proxys.com/">Piratebay</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:427px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:427px;}.gmap_iframe {height:427px!important;}</style></div>
+              </div> <!-- end of image-container -->
+          </div> <!-- end of col -->
+          <div class="col-lg-5"  style="text-align: left;">
+              <div class="text-container">
+                  <h2 style="font-size:45px;">Venue</h2> <br>
+                  <h6 style="margin-bottom: 1rem; margin-top: -1rem; color:var(--s-color); ">Cedar College DHA Campus</h6>
+                  <p>211 Khayaban-e-Shaheen, DHA Karachi Phase VIII Zone B Zone B Phase 8 Defence Housing Authority, Karachi, Sindh 75500  </p>
+                  <a class="read-more no-line green" href="#register">Register now <span class="fas fa-long-arrow-alt-right"></span></a>
+              </div> <!-- end of text-container -->
+          </div> <!-- end of col -->
+      </div> <!-- end of row -->
+  </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of services 2 -->
+
+
+   
         
       
 
 
     <!-- Testimonials -->
-    <div class="slider-1">
+    <div class="slider-1" id="F-message">
       
         <div class="container">
             <div class="row">
@@ -373,47 +1015,36 @@
                             <div class="swiper-wrapper">
                                 
                                  <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/Test1.jpg" alt="alternative">
-                                    <p class="testimonial-text">“Going into CREW I knew next to nothing about Robotics or Engineering. To put that into perspective, I didn't even know what Arduino was. All I had was a great desire to set foot in this wonderful branch of science; to learn the ways of robotics and so much more. I made this desire evident to my seniors and today, a year later, I am happy to say I have achieved all that I wished with CREW and plan on doing so much more next year with you, the AS members"
+                                    <img class="testimonial-image" src="/images/dr.ha.jfif" alt="alternative">
+                                    <p class="testimonial-text">“It is with great pride and excitement that we welcome you to Scinnova. In this pioneering inter school competition, the combination of national and international participants raises the bar for challenge, interest and stimulation. Experiences such as these are incubators for future leaders, allowing them to become competent individuals, logical problem-solvers, and dynamic visionaries. I hope that this year, like the previous ones, Scinnova proves to be an amazing learning experience and all the participants go back having learnt some new skills and with great memories. Therefore, we are incredibly proud to present to you Scinnova VI, an event like no other!"
 </p>
-                                    <div class="testimonial-author">Omer Bin Abdullah</div>
-                                    <div class="testimonial-position">A2 Executive - Director Logistics</div>
+                                    <div class="testimonial-author">Dr. Hussham Arshad</div>
+                                    <div class="testimonial-position">Mentor - CoRDS</div>
                                 </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
         
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/t2.jfif" alt="alternative">
-                                    <p class="testimonial-text">“Joining CREW was like dream coming to reality, as I always wanted to learn robotics and enhance my graphic skills. Working with CREW taught me many things like arduino, time management, machine learning and working late”</p>
-                                    <div class="testimonial-author">Mohammad Azain</div>
-                                    <div class="testimonial-position">A2 Executive - Enthusiast</div>
+                                    <img class="testimonial-image" src="/images/^0D16463C8BFCEF86B15F7C121310D802D603FE53356AF30CF6^pimgpsh_fullsize_distr.png" alt="alternative">
+                                    <p class="testimonial-text">“ Scinnova is an annual event hosted by Cedar College's STEM societies and provides participants with the opportunity to compete against their peers in a competitive environment. At Cedar College, experiential learning is powerful; it allows students to gain perspective on education outside the classroom, beyond the prescribed books and syllabi, and onto the real world. 
+                                      " 
+                                    </p>
+                                    <div class="testimonial-author">Roque Martin D'Mello</div>
+                                    <div class="testimonial-position">CEO - Cedar College</div>
                                 </div> <!-- end of swiper-slide -->
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/test.jpg" alt="alternative">
-                                    <p class="testimonial-text">“I joined CREW expecting to expand my knowledge and experience in Robotics and Programming, but I had no idea that I would learn so much more along the way. A year later, I have learned engineering, content writing, web development, Machine learning, and so much more. I'd like to extend this learning opportunity to you as well, so that we can build a community that is equipped to engineer a better future”</p>
-                                    <div class="testimonial-author">Haris Hussain Khan</div>
-                                    <div class="testimonial-position">A2 Executive - Ace</div>
+                                    <img class="testimonial-image" src="/images/sir-humayun.jpg" alt="alternative">
+                                    <p class="testimonial-text">“It is a great pleasure to invite you to the sixth edition of our annual science olympiad, Scinnova. Our goal is to make students think of learning as something to be enjoyed; encourage them to visualize and physically execute the concepts they have studied. It also offers students the opportunity to learn teamwork, leadership, innovation, and the value of creative, experiential learning by collaborating together. May the best team win!”</p>
+                                    <div class="testimonial-author">Humayun Saleem  </small></div>
+                                    <div class="testimonial-position">Coordinator - STEM</div>
                                 </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
     
                                 <!-- Slide -->
                                
                                 <!-- end of slide -->
-                                 <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/Syed Ali Abbas (1).jpg" alt="alternative">
-                                    <p class="testimonial-text">“Robotics and programming have always fascinated me. Crew was like a doorway to learn more about these skills. From expertising my current skills to learning new ones, and organizing workshops and events, the past year was a worthy experience"
-</p>
-                                    <div class="testimonial-author">Syed Ali Abbas</div>
-                                    <div class="testimonial-position">A2 Executive - Roboticist</div>
-                                </div>
-                                 <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/Test4.jpg" alt="alternative">
-                                    <p class="testimonial-text">“Dealing with MCUs and circuits has always been something I know as back of my hand.The Crew was the perfect society to polish my skills and transfer this knowledge of mine to other students through workshop
-”</p>
-                                    <div class="testimonial-author">Waiz Muhammad Qazi</div>
-                                    <div class="testimonial-position">A2 Executive - (real)</div>
-                                </div>
+                                 
         
                             </div> <!-- end of swiper-wrapper -->
         
@@ -442,20 +1073,17 @@
                     <!-- Counter -->
                     <div class="counter-container">
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="474" data-purecounter-duration="3" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="1028" data-purecounter-duration="2" class="purecounter">1</div>
                             <div class="counter-info">Our Followers on instagram </div>
                         </div> <!-- end of counter-cell -->
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="154" data-purecounter-duration="3" class="purecounter">1</div>
+                            <div data-purecounter-start="0" data-purecounter-end="973" data-purecounter-duration="2" class="purecounter">1</div>
                             <div class="counter-info">Our Followers on Facebook</div>
                         </div> <!-- end of counter-cell -->
+                       
                         <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="11" data-purecounter-duration="3" class="purecounter">1</div>
-                            <div class="counter-info">Successful Projects so far</div>
-                        </div> <!-- end of counter-cell -->
-                        <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="3" class="purecounter">1</div>
-                            <div class="counter-info">Our Prosperous Ventures</div>
+                            <div data-purecounter-start="0" data-purecounter-end="4714" data-purecounter-duration="2" class="purecounter">1</div>
+                            <div class="counter-info">Participants so far</div>
                         </div> <!-- end of counter-cell -->
                     </div> <!-- end of counter-container -->
                     <!-- end of counter -->
@@ -466,7 +1094,7 @@
     </div> <!-- end of counter -->
     <!-- end of statistics -->
 
-
+</div>
     <!-- Contact -->
     <div id="contact" class="form-1">
         <div class="container">
@@ -476,15 +1104,16 @@
                     <p class="p-heading">How can we improve? We are open to suggestions</p>
                     <ul class="list-unstyled li-space-lg">
                       
-                        <li><i class="fas fa-envelope"></i> &nbsp;<a>crew@cedar.edu.pk</a></li>
+                        <li><i class="fas fa-envelope"></i> &nbsp;<a>info.Scinnova@cedar.edu.pk</a></li>
                     </ul>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
+                  
                     
                     <!-- Contact Form -->
-                    <form>
+                    <form action="https://formsubmit.co/gucinenu@gmail.com" method="POST">
                         <div class="form-group">
                             <input type="text" class="form-control-input" placeholder="Name" required>
                         </div>
@@ -513,15 +1142,21 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-col first">
-                        <h6>About CREW</h6>
-                        <p class="p-small">We are part of the prestigious STEM societies at Cedar and are associated with robotics, engineering and programming</p>
+                        <h6>About Scinnova</h6>
+                        <p class="p-small">Scinnova is the flagship event of Cedar’s STEM Societies. It’s a legacy being passed down for six years, improved by new minds every year.  
+                        </p>
                     </div> <!-- end of footer-col -->
-                    <div class="footer-col second">
-                       
+                    <div class="footer-col second" style="text-align: left; justify-content: center;">
+                        <h6>Emails</h6>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li>info.scinnova@cedar.edu.pk</li>
+                            <li>reg.scinnova@cedar.edu.pk</li>
+                            <li>scinnova@cedar.edu.pk</li>
+                        </ul>
                     </div> <!-- end of footer-col -->
                     <div class="footer-col third">
                         <span class="fa-stack">
-                            <a href="https://www.facebook.com/cedar.crew/">
+                            <a href="https://www.facebook.com/scinnova.v/">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-facebook-f fa-stack-1x"></i>
                             </a>
@@ -529,12 +1164,12 @@
                        
                        
                         <span class="fa-stack">
-                            <a href="https://www.instagram.com/crew.cedar/">
+                            <a href="https://www.instagram.com/scinnova_vi/">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
-                        <p class="p-small">We would love to hear from you <strong>crew@cedar.edu.pk</strong></a></p>
+                        <p class="p-small">Made with  <i class="las la-heart"></i>  for Scinnova</p>
                     </div> <!-- end of footer-col -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -548,13 +1183,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a href="#your-link">Cedar CREW</a></p>
+                    <p class="p-small">Copyright © <a href="#your-link">Scinnova</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
 
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Designed by Haris Hussain Khan </a></p>
+                    <p class="p-small">Designed by : <strong> Haris Hussain Khan</strong></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
@@ -579,6 +1214,7 @@
 var icon= document.getElementById("icon");
     icon.onclick= function(){
         document.body.classList.toggle("darktheme");
+        
        if(document.body.classList.contains("darktheme"))
             {
                 icon.classList.add("far");
@@ -597,6 +1233,15 @@ var icon= document.getElementById("icon");
 
 
 </script>
+
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
 
 
 
